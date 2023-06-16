@@ -1,0 +1,24 @@
+<div class="container p-3 mt-5 bg-dark text-center">
+    <h2 class="text-light mb-5" >Todos List</h2>
+    <div class="row">
+        <div class="col-10">
+            <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Your List Key"
+                [(ngModel)]="inputValue"
+            />
+        </div>
+        <div class="col-2">
+            <button (click)="addTodo()" class="btn btn-outline-success d-block w-100">Add</button>
+        </div>
+    </div>
+    <div *ngFor="let todo of todoslist; let i = index" class="row mt-3">
+        <div class="col-10">
+            <p class="bg-secondary p-1 rounded">{{todo}}</p>
+        </div>
+        <div class="col-2">
+            <button (click)="removeTodo(i)" class="btn btn-outline-danger d-block w-100">Remove</button>
+        </div>
+    </div>
+</div>

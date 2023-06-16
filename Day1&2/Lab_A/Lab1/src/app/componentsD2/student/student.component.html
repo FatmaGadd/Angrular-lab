@@ -1,0 +1,46 @@
+<form class="row g-3 bg-dark text-light m-5 p-3">
+    <div class="text-center lead fs-2">
+        Add Student
+    </div>
+<div class="col-md-4">
+    <label for="validationDefault01" class="form-label">Name</label>
+    <input type="text" class="form-control" id="validationDefault01"  name="n" [(ngModel)]="stdName" required>
+    <span *ngIf="stdName.length<3" class="text-danger">{{invalidName}}</span>
+</div>
+<div class="col-md-4">
+    <label for="validationDefault02" class="form-label">Age</label>
+    <input type="number" class="form-control" id="validationDefault02" name="a" [(ngModel)]="stdage" required>
+    <span *ngIf="+stdage<18" class="text-danger">{{invalidAge}}</span>
+</div>
+
+<div class="col-12">
+    <button (click)="Add()" class="btn btn-outline-warning" type="submit">Add</button>
+</div>
+</form>
+
+<table class="table table-bordered m-5 p-3 text-center">
+<thead>
+    <th>
+        ID
+    </th>
+    <th>
+        Name
+    </th>
+    <th>
+        Age
+    </th>
+</thead>
+<tbody>
+    <tr *ngFor=" let std of studentList">
+        <td>
+            {{std.id}}
+        </td>
+        <td>
+            {{std.stName}}
+        </td>
+        <td>
+            {{std.age}}
+        </td>
+    </tr>
+</tbody>
+</table>
