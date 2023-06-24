@@ -1,0 +1,46 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "ImgUrl": "/assets/imgs/iphone.jpg",
+      "ProductName": "Iphone",
+      "Price": 5000,
+      "Quantity": 2
+    },
+    {
+      "id": 2,
+      "ImgUrl": "/assets/imgs/samsung.jpeg",
+      "ProductName": "samsung",
+      "Price": 3000,
+      "Quantity": 5
+    },
+    {
+      "ProductName": "huawie",
+      "Price": 2500,
+      "Quantity": 0,
+      "ImgUrl": "/assets/imgs/huawie.jpeg",
+      "id": 3
+    },
+    {
+      "ProductName": "lenovo",
+      "Price": 4000,
+      "Quantity": 1,
+      "ImgUrl": "/assets/imgs/lenovo.jpeg",
+      "id": 4
+    },
+    {
+      "ProductName": "mobile",
+      "Price": 1500,
+      "Quantity": 1,
+      "ImgUrl": "/assets/imgs/def.png",
+      "id": 5
+    },
+    {
+      "ProductName": "new mobile",
+      "Price": 1000,
+      "Quantity": 5,
+      "ImgUrl": "/assets/imgs/def.png",
+      "id": 6
+    }
+  ]
+}
