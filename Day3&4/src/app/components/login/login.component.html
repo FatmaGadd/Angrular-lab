@@ -1,0 +1,19 @@
+<form class="w-75 m-5" [formGroup]="loginForm" (submit)="login($event)">
+    <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">UserName</label>
+        <input formControlName="userName" type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter UserName">
+        <ng-container *ngIf="getUserName.touched">
+            <div *ngIf="getUserName.hasError('required')" class="form-text text-danger">UserName Is Required</div>
+        </ng-container>
+    </div>
+    <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Password</label>
+        <input formControlName="password" type="password" class="form-control" id="formGroupExampleInput2" placeholder="Enter password">
+        <ng-container *ngIf="getPassword.touched">
+            <div *ngIf="getPassword.hasError('required')" class="form-text text-danger">Password Is Required</div>
+        </ng-container>
+    </div>
+    
+    <div>{{loginForm.value | json}}</div>
+    <button type="submit" class="mt-4 btn btn-dark" >LogIn </button>
+</form>

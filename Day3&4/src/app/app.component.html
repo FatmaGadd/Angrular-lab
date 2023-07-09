@@ -1,0 +1,17 @@
+<app-navbar></app-navbar>
+<router-outlet></router-outlet>
+<!-- token:`${BASE_URL}/token` -->
+<!-- 
+    constructor(
+    private LoginService: LoginService,
+    private token: TokenService
+  ) {}
+  login() {
+    console.log('data.token');
+    this.LoginService.logIn('', '').subscribe({
+      next: (data) => {
+        console.log(data.token);
+        this.token.SaveToken(data.token);
+      },
+    });
+  } -->
